@@ -5,3 +5,5 @@ GitHub: https://gitcode.com/kunhe0512/11th_sky_hackathon_nim_sagemaker
 邮箱登录查看验证码：
 nvdevelper60@outlook.com
 nv900512
+# 启动方式
+docker-compose -p byte_buddies up -d

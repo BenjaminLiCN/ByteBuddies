@@ -2,7 +2,7 @@ from langchain_elasticsearch import ElasticsearchStore
 from uuid import uuid4
 from langchain_core.documents import Document
 from langchain_nvidia_ai_endpoints import NVIDIAEmbeddings
-
+# 参考：https://python.langchain.com/docs/integrations/vectorstores/elasticsearch/#query-directly
 # 初始化向量模型
 client = NVIDIAEmbeddings(
   model="nvidia/nv-embedqa-e5-v5",
