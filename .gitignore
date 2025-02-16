@@ -4,3 +4,6 @@ include/
 lib/
 share/
 .idea/
+IBJts/
+etc/
+META-INF/

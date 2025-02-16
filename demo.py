@@ -7,7 +7,7 @@ from openai import OpenAI
 
 # 初始化OpenAI客户端
 openAIClient = OpenAI(
-    api_key="sk-b607e13505ac4ce3bf0a656644564b92",
+    api_key="",
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 
