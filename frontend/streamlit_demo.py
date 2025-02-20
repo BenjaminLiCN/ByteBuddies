@@ -18,10 +18,10 @@ for message in st.session_state.messages:
 messageContainer = None
 inputContainer = None
 if showPdf:
-    col1, col2 = st.columns([2, 1])
-    messageContainer = col1.container(height=250)
+    col1, col2 = st.columns([3, 2])
+    messageContainer = col1.container(height=400)
     inputContainer = col1.container()
-    with col2.container(height=300):
+    with col2.container(height=500):
         pdf_viewer("frontend/NeurIPS-2023-openagi-when-llm-meets-domain-experts-Paper-Datasets_and_Benchmarks.pdf",scroll_to_page=2)
 else:
     messageContainer = st.container()

@@ -7,3 +7,11 @@ nvdevelper60@outlook.com
 nv900512
 # 启动方式
 docker-compose -p byte_buddies up -d
+# 前端依赖
+```
+conda install streamlit
+```
+# 前端启动
+```
+streamlit run /Users/lijingyi/ByteBuddies/frontend/streamlit_md.py
+```
