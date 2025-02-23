@@ -1,17 +1,21 @@
 # ByteBuddies
-GitHub: https://gitcode.com/kunhe0512/11th_sky_hackathon_nim_sagemaker
-​ByteBuddies：用户名：nvdevelper60@outlook.com密码：Nv60developer；NVDC节点 登录端口：36.150.110.74:9946Gradio端口：36.150.110.74:9546
-
-邮箱登录查看验证码：
-nvdevelper60@outlook.com
-nv900512
+第十一届英伟达Hackathon，RAG智能聊天机器人比赛，成员李敬以，陈安琪，胡涵洋，黄俊杰
 # 启动方式
+```
 docker-compose -p byte_buddies up -d
+```
 # 前端依赖
 ```
-conda install streamlit
+conda install streamlit streamlit_pdf_viewer
 ```
-# 前端启动
+
+在启动前需要自行安装好python需要的别的库
+
+1. 先本地安装MinerU切片pdf成json格式，已经切好放到了earnings_json文件夹。
+2. 调用ibkr券商tws api获得英伟达过去5年k线图，存入5_year_json文件夹
+3. 启动es数据库
+3. 调用embedding_table.py和embedding_text.py进行数据切片
+4. 前端启动
 ```
-streamlit run /Users/lijingyi/ByteBuddies/frontend/streamlit_md.py
+streamlit run Ecopilot.py
 ```
